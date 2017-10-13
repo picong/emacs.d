@@ -12,9 +12,12 @@
     (add-hook 'cider-repl-mode-hook 'sanityinc/no-trailing-whitespace))
 
   (require-package 'flycheck-clojure)
+  ;;; (after-load 'clojure-mode
+  ;;;   (after-load 'flycheck
+  ;;;     (flycheck-clojure-setup)))
   (after-load 'clojure-mode
-    (after-load 'flycheck
-      (flycheck-clojure-setup))))
-
+    (after-load 'cider
+      (after-load 'flycheck
+        (flycheck-clojure-setup)))))
 
 (provide 'init-clojure-cider)
