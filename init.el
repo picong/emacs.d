@@ -154,6 +154,7 @@
 (require 'init-local nil t)
 (after-load 'anzu
   (require 'init-modeline))
+(require 'init-moveline)
 
 
 ;;----------------------------------------------------------------------------

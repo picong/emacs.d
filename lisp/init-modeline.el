@@ -126,7 +126,7 @@
                my-flycheck-mode-line
                "%1 "
                ;; evil state
-               '(:eval evil-mode-line-tag)
+               ;; '(:eval evil-mode-line-tag)
 
                ;; minor modes
                ;; minor-mode-alist
