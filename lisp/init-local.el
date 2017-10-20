@@ -1,5 +1,6 @@
 ;; (require-package 'use-package)
 
+(require-package 'youdao-dictionary)
 ;;keybindings
 (global-set-key (kbd "C-s") 'sanityinc/swiper-at-point)
 (global-set-key (kbd "C-c y") 'youdao-dictionary-search-at-point+)
