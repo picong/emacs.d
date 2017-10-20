@@ -69,7 +69,7 @@
           (`interrupted " -")
           (`suspicious '(propertize " ?" 'face 'warning)))))
 
-
+(require-package 'window-numbering)
 (window-numbering-mode)
 (setq-default mode-line-format
               (list

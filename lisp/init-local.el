@@ -1,4 +1,4 @@
-(require-package 'nyan-mode)
+;; (require-package 'use-package)
 
 ;;keybindings
 (global-set-key (kbd "C-s") 'sanityinc/swiper-at-point)
@@ -9,11 +9,14 @@
 ;;ui
 
 ;; other pakages setup
-(use-package vue-mode)
+(require-package 'vue-mode)
+;; (use-package vue-mode)
+(require-package 'hlinum)
 (hlinum-activate)
 
 ;; org-mode
-(require 'org-bullets)
+(require-package 'org-bullets)
+;; (use-package org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 
